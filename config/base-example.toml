@@ -1,0 +1,54 @@
+ENVIRONMENT = "local"
+
+[APP]
+ENV = "local"
+HOST = "0.0.0.0"
+PORT = ""
+DEBUG = true
+URL = ""
+WORKER_POOLS_COUNT = 2
+
+[MYSQL]
+DRIVER = "mysql"
+HOST = ""
+PORT = 1211
+DATABASE = ""
+MIGRATION = "schema_migrations"
+SEEDS = "schema_seeds"
+USERNAME = ""
+PASSWORD = ""
+MAX_OPEN_CONNECTIONS = 64
+MAX_IDLE_CONNECTIONS = 64
+CONN_MAX_LIFE_TIME = 15
+SSL = "false"
+
+[REDIS]
+HOST = ""
+PORT = ""
+PASSWORD = ""
+DATABASE = 0
+CONFIG_DATABASE = 3
+EXPIRATION = 3600
+
+[SENTRY]
+DSN = ""
+SAMPLE_RATE = 0.1
+TRACES_SAMPLE_RATE = 0.1
+
+[KAFKA]
+HOST = "127.0.0.1:9092"
+CLIENT_ID = ""
+RETRIES = 5
+
+[THIRD_PARTY]
+IDENTITY_URL=""
+
+[S3]
+HOST = "" #don't put http:// at the start
+ACCESS_KEY_ID = ""
+ACCESS_SECRET_KEY = ""
+USE_SSL = true
+DEFAULT_REGION = "eu-west-1"
+[S3.BUCKET]
+PRIVATE = ""
+PUBLIC = ""

@@ -1,0 +1,16 @@
+.DS_Store
+bin/
+.idea/
+.kiro/
+.vscode/
+.cursor/
+vendor/
+*.toml
+!pkg/i18n/locale/**/*.toml
+*.env
+!*-example.toml
+!*-example.yaml
+!*-example.env
+pkg/bashscripts/develop_mode_migrate_fresh_seed.sh
+docker-compose-local.yml
+Dockerfile-dev

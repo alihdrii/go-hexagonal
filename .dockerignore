@@ -1,0 +1,12 @@
+.git .gitignore
+.env *.env
+README.md LICENSE *.md
+
+vendor/ *.log *.out *.test bin/ tmp/
+.vscode/ .idea/ *.swp *.swo
+Dockerfile docker-compose.yml docker-compose.yaml
+
+*.cover cover.out coverage/
+
+*.exe *.dll *.so *.o
+*.bak *.backup *.tar.gz *.zip
